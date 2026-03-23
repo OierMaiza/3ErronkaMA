@@ -90,11 +90,11 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 15F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(359, 139);
+            this.label2.Location = new System.Drawing.Point(350, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 29);
             this.label2.TabIndex = 8;
-            this.label2.Text = "NAN-A";
+            this.label2.Text = "EMAIL-A";
             // 
             // label3
             // 
