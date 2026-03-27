@@ -18,14 +18,16 @@ namespace EuskalMus
             InitializeComponent();
         }
 
-        public string login()
+        public (string rola, string izena, string abizena) login()
         {
             string email = textBox1.Text;
             string pasahitza = textBox2.Text;
 
-            if (email == "" || pasahitza == "") return null;
+            if (email == "" || pasahitza == "") return (null, null, null);
 
             string rola = null;
+            string izena = "";
+            string abizena = "";
 
             try
             {
@@ -35,16 +37,29 @@ namespace EuskalMus
                 {
                     MessageBox.Show("Ezin izan da MySQL-era konektatu", "Errorea",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return null;
+                    return (null, null, null);
                 }
 
                 MySqlCommand ps = new MySqlCommand(
-                    "SELECT rola FROM langileak WHERE emaila = @email AND pasahitza = @pasahitza", cn);
+                    "SELECT * FROM langileak WHERE emaila = @email AND pasahitza = @pasahitza", cn);
                 ps.Parameters.AddWithValue("@email", email);
                 ps.Parameters.AddWithValue("@pasahitza", pasahitza);
 
                 MySqlDataReader rs = ps.ExecuteReader();
-                if (rs.Read()) rola = rs.GetString("rola");
+
+                if (rs.Read())
+                {
+                    rola = rs.GetString("rola");
+                    izena = rs.GetString("izena");
+                    abizena = rs.GetString("abizena");
+                }
+                else
+                {
+                    rs.Close();
+                    cn.Close();
+                    return (null, null, null);
+                }
+
                 rs.Close();
                 cn.Close();
             }
@@ -54,7 +69,9 @@ namespace EuskalMus
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            return rola;
+            return (rola, izena, abizena);
+            
+
         }
 
         // ── Botoia sakatzean ────────────────────────────────────
@@ -68,13 +85,13 @@ namespace EuskalMus
                 return;
             }
 
-            string rola = login();
+            var (rola, izena, abizena) = login();
 
             if (rola != null)
             {
                 // Ondo — Dashboard ireki
-                Dashboard dashboard = new Dashboard(textBox1.Text, rola);
-                dashboard.Show();
+                Dashboard dashboard = new Dashboard(izena, abizena, rola);
+                dashboard.ShowDialog();
                 this.Hide();
             }
             else
