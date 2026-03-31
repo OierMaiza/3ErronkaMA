@@ -21,15 +21,15 @@ namespace EuskalMus
 
             if (rola == "epailea")
             {
-                pantailak = new string[] { "Txapelketak", "Partidak" };
+                pantailak = new string[] { "Txapelketak", "Partidak", "Sariak" };
             }
             else if (rola == "antolatzailea")
             {
-                pantailak = new string[] { "Txapelketak", "Partidak", "Txapelketa Kudeaketa", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena" };
+                pantailak = new string[] { "Txapelketak", "Partidak", "Txapelketa Kudeaketa", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Sariak" };
             }
             else if (rola == "kudeatzailea")
             {
-                pantailak = new string[] { "Txapelketak", "Partidak", "Txapelketa Kudeaketa", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Langileak" };
+                pantailak = new string[] { "Txapelketak", "Partidak", "Txapelketa Kudeaketa", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Langileak", "Sariak" };
             }
             else
             {
@@ -83,6 +83,11 @@ namespace EuskalMus
         {
             Button btn = (Button)sender;
             string pantaila = btn.Tag.ToString();
+
+            if (pantaila == "Sariak")
+            {
+                new Sariak().ShowDialog();
+            }
 
             // Geroago hemen bakoitzaren Form-a irekiko duzu:
             // if (pantaila == "Jokalariak")          new FJokalariak().ShowDialog();

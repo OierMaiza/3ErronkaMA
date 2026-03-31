@@ -105,6 +105,12 @@
     <Compile Include="Konexioa.cs" />
     <Compile Include="Partida.cs" />
     <Compile Include="Jokalariak.cs" />
+    <Compile Include="Sariak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sariak.Designer.cs">
+      <DependentUpon>Sariak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Txapelketa.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
