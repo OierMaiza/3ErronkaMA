@@ -17,7 +17,10 @@ namespace EuskalMus
         public Bikotea Irabazlea { get; set; }
         public string Egoera { get; set; }
 
-        public Partida(int id, int faseZenbakia, int posizioa, Bikotea bikoteaA, Bikotea bikoteaB, Bikotea irabazlea, String egoera)
+        public int txapelketa_id { get; set; }
+
+
+        public Partida(int id, int faseZenbakia, int posizioa, Bikotea bikoteaA, Bikotea bikoteaB, Bikotea irabazlea, String egoera, int txapelketa_id)
         {
             this.id = id;
             this.faseZenbakia = faseZenbakia;
@@ -26,6 +29,7 @@ namespace EuskalMus
             this.BikoteaB = bikoteaB;
             this.Irabazlea = irabazlea;
             this.Egoera = egoera;
+            this.txapelketa_id = txapelketa_id;
         }
     }
 }
