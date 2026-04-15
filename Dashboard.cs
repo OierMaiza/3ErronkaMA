@@ -88,6 +88,10 @@ namespace EuskalMus
             {
                 new Sariak().ShowDialog();
             }
+            else if (pantaila == "Txapelketak")
+            {
+                new Txapelketa().ShowDialog();
+            }
 
             // Geroago hemen bakoitzaren Form-a irekiko duzu:
             // if (pantaila == "Jokalariak")          new FJokalariak().ShowDialog();

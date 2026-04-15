@@ -6,7 +6,7 @@ namespace EuskalMus
 {
     public class Konexioa
     {
-        private static string url = "Server=localhost;Port=3306;Database=3erronka;Uid=root;Pwd=1MG32025;SslMode=Disabled;";
+        private static string url = "Server=localhost;Port=3306;Database=3erronka;Uid=root;Pwd=1MG32025;SslMode=Disabled;AllowPublicKeyRetrieval=True;";
         public MySqlConnection getConnection()
         {
             MySqlConnection con = null;

@@ -97,10 +97,10 @@ namespace EuskalMus
                 XmlElement txapelketa = doc.CreateElement("txapelketa");
                 txapelketa.SetAttribute("izena", txapIzena);
 
-                // Sariak nodo
+
                 XmlElement sariak = doc.CreateElement("sariak");
 
-                // TextBox bakoitza — hutsak saltu
+                // TextBox bakoitza
                 string[] testuak = { txt1.Text, txt2.Text, txt3.Text, txt4_10.Text };
                 string[] postuak = { "1", "2", "3", "4 - 10" };
 
@@ -127,7 +127,7 @@ namespace EuskalMus
                 txapelketa.AppendChild(sariak);
                 erroa.AppendChild(txapelketa);
 
-                // Indentazioa eduki dezan
+                    // Dokumentuak formatoa eduki dezan 
                 XmlWriterSettings ezarpenak = new XmlWriterSettings
                 {
                     Indent = true,
@@ -142,6 +142,11 @@ namespace EuskalMus
             {
                 MessageBox.Show("XML errorea:\n" + ex.Message);
             }
+        }
+
+        private void cmbTxapelketa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
