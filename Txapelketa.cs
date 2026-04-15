@@ -1,36 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EuskalMus
 {
-public class Txapelketa
+    public partial class Txapelketa : Form
     {
-        public int id { get; set; }
-        public String izena { get; set; }
-        public String herria { get; set; }
-        public String tokia { get; set; }
-        public String egoera { get; set; }
-        public int bikote_kant { get; set; }
+        // ==================== PROPIETATEAK ====================
+        public int Id { get; set; }
+        public string Izena { get; set; }
+        public string Herria { get; set; }
+        public string Tokia { get; set; }
+        public string Egoera { get; set; }
+        public int BikoteKant { get; set; }
+        public DateTime Data { get; set; }
 
-        public DateTime data { get; set; }
-        public String argazkia { get; set; }
-        public String deskribapena { get; set; }
-
-
-        public Txapelketa(int id, string izena, string herria, string tokia, string egoera, int bikote_kant, DateTime data, string argazkia, string deskribapena)
+        public Txapelketa()
         {
-            this.id = id;
-            this.izena = izena;
-            this.herria = herria;
-            this.tokia = tokia;
-            this.egoera = egoera;
-            this.bikote_kant = bikote_kant;
-            this.data = data;
-            this.argazkia = argazkia;
-            this.deskribapena = deskribapena;
+            InitializeComponent();
+        }
+
+        public Txapelketa(int id, string izena, string herria, string tokia, string egoera, int bikoteKant, DateTime data)
+        {
+            Id = id;
+            Izena = izena;
+            Herria = herria;
+            Tokia = tokia;
+            Egoera = egoera;
+            BikoteKant = bikoteKant;
+            Data = data;
+            InitializeComponent();
         }
     }
 }
