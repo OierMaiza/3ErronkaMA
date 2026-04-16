@@ -10,10 +10,8 @@ using System.Windows.Forms;
 
 namespace EuskalMus
 {
-
     public partial class Jokalariak : Form
-    {
-        // ==================== PROPIETATEAK ====================
+    {// ==================== PROPIETATEAK ====================//
         public string izena { get; set; }
         public string abizena { get; set; }
         public string emaila { get; set; }
@@ -24,19 +22,25 @@ namespace EuskalMus
         public Jokalariak()
         {
             InitializeComponent();
-        }
 
+        }
         public Jokalariak(string izena, string abizena, string emaila, string telefonoa, string herria, string pasahitza)
         {
             this.izena = izena;
+
             this.abizena = abizena;
+
             this.emaila = emaila;
+
             this.telefonoa = telefonoa;
+
             this.herria = herria;
+
             this.pasahitza = pasahitza;
-   
-        InitializeComponent();
+
+
+            InitializeComponent();
+
         }
     }
 }
-      
