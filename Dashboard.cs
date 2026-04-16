@@ -92,16 +92,20 @@ namespace EuskalMus
             {
                 new Txapelketak().ShowDialog();
             }
+            else if (pantaila == "Jokalariak")
+            {
+                new Jokalariak().ShowDialog();
+            }
+            else if (pantaila == "Partidak")
+            {
+                new Partidak().ShowDialog();
+            }
 
             // Geroago hemen bakoitzaren Form-a irekiko duzu:
-            // if (pantaila == "Jokalariak")          new FJokalariak().ShowDialog();
-            // if (pantaila == "Txapelketak")         new FTxapelketak().ShowDialog();
-            // if (pantaila == "Txapelketa Kudeaketa") new FTxapelketaKudeaketa().ShowDialog();
             // if (pantaila == "Bikoteak")             new FBikoteak().ShowDialog();
             // if (pantaila == "Zozketa")              new FZozketa().ShowDialog();
             // if (pantaila == "Sailkapena")           new FSailkapena().ShowDialog();
             // if (pantaila == "Langileak")            new FLangileak().ShowDialog();
-            // if (pantaila == "Partidak")             new FPartidak().ShowDialog();
 
             MessageBox.Show(pantaila + " — laster egingo dugu!",
                 "TODO", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EuskalMus
@@ -6,13 +13,13 @@ namespace EuskalMus
     public partial class Txapelketa : Form
     {
         // ==================== PROPIETATEAK ====================
-        public int Id { get; set; }
-        public string Izena { get; set; }
-        public string Herria { get; set; }
-        public string Tokia { get; set; }
-        public string Egoera { get; set; }
-        public int BikoteKant { get; set; }
-        public DateTime Data { get; set; }
+        public int id { get; set; }
+        public string izena { get; set; }
+        public string herria { get; set; }
+        public string tokia { get; set; }
+        public string egoera { get; set; }
+        public int bikoteKant { get; set; }
+        public DateTime data { get; set; }
 
         public Txapelketa()
         {
@@ -21,13 +28,13 @@ namespace EuskalMus
 
         public Txapelketa(int id, string izena, string herria, string tokia, string egoera, int bikoteKant, DateTime data)
         {
-            Id = id;
-            Izena = izena;
-            Herria = herria;
-            Tokia = tokia;
-            Egoera = egoera;
-            BikoteKant = bikoteKant;
-            Data = data;
+            this.id = id;
+            this.izena = izena;
+            this.herria = herria;
+            this.tokia = tokia;
+            this.egoera = egoera;
+            this.bikoteKant = bikoteKant;
+            this.data = data;
             InitializeComponent();
         }
     }
