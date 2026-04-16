@@ -12,7 +12,7 @@
         }
         private void InitializeComponent()
         {
-            this.dgvJokalariak= new System.Windows.Forms.DataGridView();
+            this.dgvJokalariak = new System.Windows.Forms.DataGridView();
             this.lblTitulua = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();

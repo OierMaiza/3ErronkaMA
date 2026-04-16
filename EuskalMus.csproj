@@ -102,17 +102,17 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Partidak.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Partidak.Designer.cs">
-      <DependentUpon>Partidak.cs</DependentUpon>
-    </Compile>
     <Compile Include="Jokalariak.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Jokalariak.Designer.cs">
       <DependentUpon>Jokalariak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partidak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partidak.Designer.cs">
+      <DependentUpon>Partidak.cs</DependentUpon>
     </Compile>
     <Compile Include="Konexioa.cs" />
     <Compile Include="Ranking.cs">
