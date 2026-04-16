@@ -1,6 +1,6 @@
 ﻿namespace EuskalMus
 {
-    partial class Txapelketa
+    partial class Jokalariak
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -12,40 +12,40 @@
         }
         private void InitializeComponent()
         {
-            this.dgvTxapelketak = new System.Windows.Forms.DataGridView();
+            this.dgvJokalariak= new System.Windows.Forms.DataGridView();
             this.lblTitulua = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblIzena = new System.Windows.Forms.Label();
             this.txtIzena = new System.Windows.Forms.TextBox();
+            this.lblAbizena = new System.Windows.Forms.Label();
+            this.txtAbizena = new System.Windows.Forms.TextBox();
+            this.lblEmaila = new System.Windows.Forms.Label();
+            this.txtEmaila = new System.Windows.Forms.TextBox();
+            this.lblPasahitza = new System.Windows.Forms.Label();
+            this.txtPasahitza = new System.Windows.Forms.TextBox();
+            this.lblTelefonoa = new System.Windows.Forms.Label();
+            this.txtTelefonoa = new System.Windows.Forms.TextBox();
             this.lblHerria = new System.Windows.Forms.Label();
             this.txtHerria = new System.Windows.Forms.TextBox();
-            this.lblTokia = new System.Windows.Forms.Label();
-            this.txtTokia = new System.Windows.Forms.TextBox();
-            this.lblEgoera = new System.Windows.Forms.Label();
-            this.cmbEgoera = new System.Windows.Forms.ComboBox();
-            this.lblBikoteKant = new System.Windows.Forms.Label();
-            this.numBikoteKant = new System.Windows.Forms.NumericUpDown();
-            this.lblData = new System.Windows.Forms.Label();
-            this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.btnKargatu = new System.Windows.Forms.Button();
             this.btnTxertatu = new System.Windows.Forms.Button();
             this.btnEguneratu = new System.Windows.Forms.Button();
             this.btnEzabatu = new System.Windows.Forms.Button();
 
             // ── DataGridView ─────────────────────────────────────────────
-            this.dgvTxapelketak.BackgroundColor = System.Drawing.Color.White;
-            this.dgvTxapelketak.Location = new System.Drawing.Point(30, 80);
-            this.dgvTxapelketak.Name = "dgvTxapelketak";
-            this.dgvTxapelketak.ReadOnly = true;
-            this.dgvTxapelketak.Size = new System.Drawing.Size(520, 320);
+            this.dgvJokalariak.BackgroundColor = System.Drawing.Color.White;
+            this.dgvJokalariak.Location = new System.Drawing.Point(30, 80);
+            this.dgvJokalariak.Name = "dgvJokalariak";
+            this.dgvJokalariak.ReadOnly = true;
+            this.dgvJokalariak.Size = new System.Drawing.Size(520, 320);
 
 
             // ── Titulua ──────────────────────────────────────────────────
             this.lblTitulua.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitulua.Location = new System.Drawing.Point(30, 20);
             this.lblTitulua.Size = new System.Drawing.Size(400, 40);
-            this.lblTitulua.Text = "TXAPELKETAK KUDEATU";
+            this.lblTitulua.Text = "JOKALARIAK KUDEATU";
 
             // ── ID ───────────────────────────────────────────────────────
             this.lblId.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -68,61 +68,55 @@
             this.txtIzena.Location = new System.Drawing.Point(670, 118);
             this.txtIzena.Size = new System.Drawing.Size(220, 30);
 
+            // ── Abizena ────────────────────────────────────────────────────
+            this.lblAbizena.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAbizena.Location = new System.Drawing.Point(580, 160);
+            this.lblAbizena.Size = new System.Drawing.Size(80, 25);
+            this.lblAbizena.Text = "Abizena:";
+
+            this.txtAbizena.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtAbizena.Location = new System.Drawing.Point(670, 158);
+            this.txtAbizena.Size = new System.Drawing.Size(220, 30);
+
+            // ── Emaila ────────────────────────────────────────────────────
+            this.lblEmaila.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblEmaila.Location = new System.Drawing.Point(580, 200);
+            this.lblEmaila.Size = new System.Drawing.Size(80, 25);
+            this.lblEmaila.Text = "Emaila:";
+
+            this.txtEmaila.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtEmaila.Location = new System.Drawing.Point(670, 198);
+            this.txtEmaila.Size = new System.Drawing.Size(220, 30);
+
+            // ── Pasahitza ────────────────────────────────────────────────
+            this.lblPasahitza.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPasahitza.Location = new System.Drawing.Point(580, 240);
+            this.lblPasahitza.Size = new System.Drawing.Size(80, 25);
+            this.lblPasahitza.Text = "Pasahitza:";
+
+            this.txtPasahitza.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtPasahitza.Location = new System.Drawing.Point(670, 238);
+            this.txtPasahitza.Size = new System.Drawing.Size(220, 30);
+
+            // ── Telefonoa (beti 32, ezin aldatu) ───────────────────────
+            this.lblTelefonoa.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblTelefonoa.Location = new System.Drawing.Point(580, 280);
+            this.lblTelefonoa.Size = new System.Drawing.Size(90, 25);
+            this.lblTelefonoa.Text = "Telefonoa:";
+
+            this.txtTelefonoa.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTelefonoa.Location = new System.Drawing.Point(670, 278);
+            this.txtTelefonoa.Size = new System.Drawing.Size(100, 30);
+
             // ── Herria ───────────────────────────────────────────────────
             this.lblHerria.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblHerria.Location = new System.Drawing.Point(580, 160);
+            this.lblHerria.Location = new System.Drawing.Point(580, 320);
             this.lblHerria.Size = new System.Drawing.Size(80, 25);
             this.lblHerria.Text = "Herria:";
 
             this.txtHerria.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtHerria.Location = new System.Drawing.Point(670, 158);
-            this.txtHerria.Size = new System.Drawing.Size(220, 30);
-
-            // ── Tokia ────────────────────────────────────────────────────
-            this.lblTokia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblTokia.Location = new System.Drawing.Point(580, 200);
-            this.lblTokia.Size = new System.Drawing.Size(80, 25);
-            this.lblTokia.Text = "Tokia:";
-
-            this.txtTokia.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTokia.Location = new System.Drawing.Point(670, 198);
-            this.txtTokia.Size = new System.Drawing.Size(220, 30);
-
-            // ── Egoera ───────────────────────────────────────────────────
-            this.lblEgoera.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblEgoera.Location = new System.Drawing.Point(580, 240);
-            this.lblEgoera.Size = new System.Drawing.Size(80, 25);
-            this.lblEgoera.Text = "Egoera:";
-
-            this.cmbEgoera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEgoera.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbEgoera.Location = new System.Drawing.Point(670, 238);
-            this.cmbEgoera.Size = new System.Drawing.Size(220, 30);
-
-            // ── Bikote Kant (beti 32, ezin aldatu) ───────────────────────
-            this.lblBikoteKant.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblBikoteKant.Location = new System.Drawing.Point(580, 280);
-            this.lblBikoteKant.Size = new System.Drawing.Size(90, 25);
-            this.lblBikoteKant.Text = "Bikote Kant:";
-
-            this.numBikoteKant.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.numBikoteKant.Location = new System.Drawing.Point(670, 278);
-            this.numBikoteKant.Size = new System.Drawing.Size(100, 30);
-            this.numBikoteKant.Value = 32;
-            this.numBikoteKant.Minimum = 32;
-            this.numBikoteKant.Maximum = 32;   
-            this.numBikoteKant.Enabled = false;
-
-            // ── Data ─────────────────────────────────────────────────────
-            this.lblData.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblData.Location = new System.Drawing.Point(580, 320);
-            this.lblData.Size = new System.Drawing.Size(80, 25);
-            this.lblData.Text = "Data:";
-
-            this.dtpData.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpData.Location = new System.Drawing.Point(670, 318);
-            this.dtpData.Size = new System.Drawing.Size(150, 30);
+            this.txtHerria.Location = new System.Drawing.Point(670, 318);
+            this.txtHerria.Size = new System.Drawing.Size(150, 30);
 
             // ── Botoiak ──────────────────────────────────────────────────
             System.Drawing.Color botoiKolorea = System.Drawing.Color.FromArgb(52, 152, 219);
@@ -164,48 +158,46 @@
             this.btnEzabatu.FlatAppearance.BorderSize = 0;
 
             // ── Formularioa ──────────────────────────────────────────────
-            this.Text = "EuskalMus - Txapelketak Kudeatu";
+            this.Text = "EuskalMus - Jokalariak Kudeatu";
             this.ClientSize = new System.Drawing.Size(920, 500);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.BackColor = System.Drawing.Color.FromArgb(236, 240, 241);
 
-            this.Controls.Add(this.dgvTxapelketak);
+            this.Controls.Add(this.dgvJokalariak);
             this.Controls.Add(this.lblTitulua);
             this.Controls.Add(this.lblId); this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblIzena); this.Controls.Add(this.txtIzena);
+            this.Controls.Add(this.lblAbizena); this.Controls.Add(this.txtAbizena);
+            this.Controls.Add(this.lblEmaila); this.Controls.Add(this.txtEmaila);
+            this.Controls.Add(this.lblPasahitza); this.Controls.Add(this.txtPasahitza);
+            this.Controls.Add(this.lblTelefonoa); this.Controls.Add(this.txtTelefonoa);
             this.Controls.Add(this.lblHerria); this.Controls.Add(this.txtHerria);
-            this.Controls.Add(this.lblTokia); this.Controls.Add(this.txtTokia);
-            this.Controls.Add(this.lblEgoera); this.Controls.Add(this.cmbEgoera);
-            this.Controls.Add(this.lblBikoteKant); this.Controls.Add(this.numBikoteKant);
-            this.Controls.Add(this.lblData); this.Controls.Add(this.dtpData);
             this.Controls.Add(this.btnKargatu);
             this.Controls.Add(this.btnTxertatu);
             this.Controls.Add(this.btnEguneratu);
             this.Controls.Add(this.btnEzabatu);
 
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTxapelketak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBikoteKant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
         // ── Kontrolen deklarazioa ────────────────────────────────────────
-        private System.Windows.Forms.DataGridView dgvTxapelketak;
+        private System.Windows.Forms.DataGridView dgvJokalariak;
         private System.Windows.Forms.Label lblTitulua;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblIzena;
         private System.Windows.Forms.TextBox txtIzena;
+        private System.Windows.Forms.Label lblAbizena;
+        private System.Windows.Forms.TextBox txtAbizena;
+        private System.Windows.Forms.Label lblEmaila;
+        private System.Windows.Forms.TextBox txtEmaila;
+        private System.Windows.Forms.Label lblPasahitza;
+        private System.Windows.Forms.TextBox txtPasahitza;
+        private System.Windows.Forms.Label lblTelefonoa;
+        private System.Windows.Forms.TextBox txtTelefonoa;
         private System.Windows.Forms.Label lblHerria;
         private System.Windows.Forms.TextBox txtHerria;
-        private System.Windows.Forms.Label lblTokia;
-        private System.Windows.Forms.TextBox txtTokia;
-        private System.Windows.Forms.Label lblEgoera;
-        private System.Windows.Forms.ComboBox cmbEgoera;
-        private System.Windows.Forms.Label lblBikoteKant;
-        private System.Windows.Forms.NumericUpDown numBikoteKant;
-        private System.Windows.Forms.Label lblData;
-        private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Button btnKargatu;
         private System.Windows.Forms.Button btnTxertatu;
         private System.Windows.Forms.Button btnEguneratu;
