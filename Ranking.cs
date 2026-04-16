@@ -21,6 +21,7 @@ namespace EuskalMus
         private string irabazitako_partidak { get; set; }
 
         private string galdutako_partidak { get; set; }
+
         public Ranking(int id, int jokalaria_id, string jokatutako_partidak, string irabazitako_partidak, string galdutako_partidak)
         {
             InitializeComponent();
