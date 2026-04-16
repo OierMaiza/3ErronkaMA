@@ -115,8 +115,6 @@
       <DependentUpon>Jokalariak.cs</DependentUpon>
     </Compile>
     <Compile Include="Konexioa.cs" />
-<<<<<<< HEAD
-    <Compile Include="Partida.cs" />
     <Compile Include="Jokalariak.cs" />
     <Compile Include="Ranking.cs">
       <SubType>Form</SubType>
@@ -124,8 +122,6 @@
     <Compile Include="Ranking.Designer.cs">
       <DependentUpon>Ranking.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> master
     <Compile Include="Sariak.cs">
       <SubType>Form</SubType>
     </Compile>
