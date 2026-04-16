@@ -12,12 +12,12 @@ namespace EuskalMus
 {
     public partial class Jokalariak : Form
     {// ==================== PROPIETATEAK ====================//
-        public string izena { get; set; }
-        public string abizena { get; set; }
-        public string emaila { get; set; }
-        public string telefonoa { get; set; }
-        public string herria { get; set; }
-        public string pasahitza { get; set; }
+        private string izena { get; set; }
+        private string abizena { get; set; }
+        private string emaila { get; set; }
+        private string telefonoa { get; set; }
+        private string herria { get; set; }
+        private string pasahitza { get; set; }
 
         public Jokalariak()
         {

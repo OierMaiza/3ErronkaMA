@@ -100,15 +100,18 @@ namespace EuskalMus
             {
                 new Partidak().ShowDialog();
             }
-
-            // Geroago hemen bakoitzaren Form-a irekiko duzu:
-            // if (pantaila == "Bikoteak")             new FBikoteak().ShowDialog();
-            // if (pantaila == "Zozketa")              new FZozketa().ShowDialog();
-            // if (pantaila == "Sailkapena")           new FSailkapena().ShowDialog();
-            // if (pantaila == "Langileak")            new FLangileak().ShowDialog();
-
-            MessageBox.Show(pantaila + " — laster egingo dugu!",
-                "TODO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else if (pantaila == "Bikoteak")
+            {
+                new Bikoteak().ShowDialog();
+            }
+            else if (pantaila == "Rankinga")
+            {
+                new Ranking().ShowDialog();
+            }
+            //else if (pantaila == "Langileak")
+            //{
+             //   new Langileak().ShowDialog();
+            //}//
         }
     }
 }

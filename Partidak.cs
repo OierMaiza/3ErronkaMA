@@ -12,15 +12,15 @@ namespace EuskalMus
 {
     public partial class Partidak : Form
     {
-        public int id { get; set; }
-        public int txapelketa_id { get; set; }
-        public int faseZenbakia { get; set; }
-        public int posizioa { get; set; }
-        public int bikoteaA { get; set; }
-        public int bikoteaB { get; set; }
-        public int irabazlea { get; set; }
-        public int galtzailea { get; set; }
-        public string egoera { get; set; }
+        private int id { get; set; }
+        private int txapelketa_id { get; set; }
+        private int faseZenbakia { get; set; }
+        private int posizioa { get; set; }
+        private int bikoteaA { get; set; }
+        private int bikoteaB { get; set; }
+        private int irabazlea { get; set; }
+        private int galtzailea { get; set; }
+        private string egoera { get; set; }
 
         public Partidak(int id, int txapelketa_id, int faseZenbakia, int posizioa, int bikoteaA, int bikoteaB, int irabazlea, int galtzailea, string egoera)
         {

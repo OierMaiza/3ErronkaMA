@@ -6,13 +6,13 @@ namespace EuskalMus
     public partial class Txapelketak : Form
     {
         // ==================== PROPIETATEAK ====================
-        public int Id { get; set; }
-        public string Izena { get; set; }
-        public string Herria { get; set; }
-        public string Tokia { get; set; }
-        public string Egoera { get; set; }
-        public int BikoteKant { get; set; }
-        public DateTime Data { get; set; }
+        private int Id { get; set; }
+        private string Izena { get; set; }
+        private string Herria { get; set; }
+        private string Tokia { get; set; }
+        private string Egoera { get; set; }
+        private int BikoteKant { get; set; }
+        private DateTime Data { get; set; }
 
         public Txapelketak()
         {
