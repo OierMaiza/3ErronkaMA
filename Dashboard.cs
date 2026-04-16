@@ -90,7 +90,7 @@ namespace EuskalMus
             }
             else if (pantaila == "Txapelketak")
             {
-                new Txapelketa().ShowDialog();
+                new Txapelketak().ShowDialog();
             }
 
             // Geroago hemen bakoitzaren Form-a irekiko duzu:
