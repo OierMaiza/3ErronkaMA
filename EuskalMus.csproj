@@ -107,6 +107,12 @@
     <Compile Include="Bikoteak.Designer.cs">
       <DependentUpon>Bikoteak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Langileak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Langileak.Designer.cs">
+      <DependentUpon>Langileak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jokalariak.cs">
       <SubType>Form</SubType>
     </Compile>

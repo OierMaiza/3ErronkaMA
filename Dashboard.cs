@@ -108,10 +108,10 @@ namespace EuskalMus
             {
                 new Ranking().ShowDialog();
             }
-            //else if (pantaila == "Langileak")
-            //{
-             //   new Langileak().ShowDialog();
-            //}//
+            else if (pantaila == "Langileak")
+            {
+                new Langileak().ShowDialog();
+            }
         }
     }
 }
