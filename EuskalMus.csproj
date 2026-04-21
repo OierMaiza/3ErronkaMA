@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BikoteakCrud.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +108,7 @@
     <Compile Include="Bikoteak.Designer.cs">
       <DependentUpon>Bikoteak.cs</DependentUpon>
     </Compile>
+    <Compile Include="JokalariakCrud.cs" />
     <Compile Include="Langileak.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +121,7 @@
     <Compile Include="Jokalariak.Designer.cs">
       <DependentUpon>Jokalariak.cs</DependentUpon>
     </Compile>
+    <Compile Include="LangileakCrud.cs" />
     <Compile Include="Partidak.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,12 +129,14 @@
       <DependentUpon>Partidak.cs</DependentUpon>
     </Compile>
     <Compile Include="Konexioa.cs" />
+    <Compile Include="PartidakCrud.cs" />
     <Compile Include="Ranking.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ranking.Designer.cs">
       <DependentUpon>Ranking.cs</DependentUpon>
     </Compile>
+    <Compile Include="RankingCrud.cs" />
     <Compile Include="Sariak.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +157,7 @@
     <Compile Include="Txapelketak.Designer.cs">
       <DependentUpon>Txapelketak.cs</DependentUpon>
     </Compile>
+    <Compile Include="TxapelketakCrud.cs" />
     <Compile Include="Zozketa.cs">
       <SubType>Form</SubType>
     </Compile>

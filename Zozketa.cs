@@ -172,7 +172,7 @@ namespace EuskalMus
                     DataGridViewAutoSizeColumnMode.None;
                 dgvPartidak.Columns["vs"].Width = 40;
 
-                int posizioa = 0;
+                int posizioa = 1;
                 for (int i = 0; i < bikoteIds.Count - 1; i += 2)
                 {
                     int bikoteA = bikoteIds[i];
