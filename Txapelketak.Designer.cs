@@ -109,9 +109,9 @@
             this.numBikoteKant.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.numBikoteKant.Location = new System.Drawing.Point(670, 278);
             this.numBikoteKant.Size = new System.Drawing.Size(100, 30);
-            this.numBikoteKant.Value = 32;
-            this.numBikoteKant.Minimum = 32;
-            this.numBikoteKant.Maximum = 32;   
+            this.numBikoteKant.Value = 0;
+            this.numBikoteKant.Minimum = 0;
+            this.numBikoteKant.Maximum = 0;   
             this.numBikoteKant.Enabled = false;
 
             // ── Data ─────────────────────────────────────────────────────

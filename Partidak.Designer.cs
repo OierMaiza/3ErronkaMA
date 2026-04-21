@@ -219,12 +219,6 @@
         private System.Windows.Forms.TextBox txtGaltzailea_id;
         private System.Windows.Forms.Label lblEgoera;
         private System.Windows.Forms.TextBox txtEgoera;
-        private System.Windows.Forms.Label lblPasahitza;
-        private System.Windows.Forms.TextBox txtPasahitza;
-        private System.Windows.Forms.Label lblTelefonoa;
-        private System.Windows.Forms.TextBox txtTelefonoa;
-        private System.Windows.Forms.Label lblHerria;
-        private System.Windows.Forms.TextBox txtHerria;
         private System.Windows.Forms.Button btnKargatu;
         private System.Windows.Forms.Button btnEguneratu;
     }

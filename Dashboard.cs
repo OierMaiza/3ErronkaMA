@@ -25,11 +25,11 @@ namespace EuskalMus
             }
             else if (rola == "antolatzailea")
             {
-                pantailak = new string[] { "Txapelketak", "Partidak", "Txapelketa Kudeaketa", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Sariak" };
+                pantailak = new string[] { "Txapelketak", "Partidak", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Sariak" };
             }
             else if (rola == "kudeatzailea")
             {
-                pantailak = new string[] { "Txapelketak", "Partidak", "Txapelketa Kudeaketa", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Langileak", "Sariak" };
+                pantailak = new string[] { "Txapelketak", "Partidak", "Jokalariak", "Bikoteak", "Zozketa", "Sailkapena", "Langileak", "Sariak" };
             }
             else
             {
@@ -100,6 +100,10 @@ namespace EuskalMus
             {
                 new Partidak().ShowDialog();
             }
+            else if (pantaila == "Zozketa")
+            {
+                new Zozketa().ShowDialog();
+            }
 
             // Geroago hemen bakoitzaren Form-a irekiko duzu:
             // if (pantaila == "Bikoteak")             new FBikoteak().ShowDialog();
@@ -107,8 +111,6 @@ namespace EuskalMus
             // if (pantaila == "Sailkapena")           new FSailkapena().ShowDialog();
             // if (pantaila == "Langileak")            new FLangileak().ShowDialog();
 
-            MessageBox.Show(pantaila + " — laster egingo dugu!",
-                "TODO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

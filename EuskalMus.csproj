@@ -141,6 +141,12 @@
     <Compile Include="Txapelketak.Designer.cs">
       <DependentUpon>Txapelketak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zozketa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zozketa.Designer.cs">
+      <DependentUpon>Zozketa.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
